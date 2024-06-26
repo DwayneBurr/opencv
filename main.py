@@ -42,7 +42,7 @@ def findClickPostions(mining_screen_path, iron_ore_image_path, threshold=0.8, de
             center_y = y + int(w/2)
             points.append((center_x, center_y))
 
-            if debug_mode == 'rectangles':
+            if debug_mode == 'rectangles'
                 top_left = (x, y)
                 bottom_right = (x + w, y + h)
 
@@ -54,5 +54,5 @@ def findClickPostions(mining_screen_path, iron_ore_image_path, threshold=0.8, de
             cv.waitKey()
     return points
 
-points = findClickPostions('assets/mining_start.png', 'assets/iron_ore_north.png', debug_mode='points')
+points = findClickPostions('mining_screen.png', 'iron_ore.png', debug_mode='points')
 print(points)
